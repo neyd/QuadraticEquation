@@ -1,6 +1,7 @@
 package com.neyd.QuadraticEquation;
 
 import java.util.Scanner;
+
 /**
  * Created by Женя on 27.10.2015.
  */
@@ -10,10 +11,10 @@ public class QuadraticEquation {
         int a;
         int b;
         int c;
+        int res;
+        int dis;
         double x1;
         double x2;
-        int res;
-        double dis;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Задайте квадратне рівняння a,b,c у рівнянні ax²+bx+c=0");
         System.out.println("Введіть а");
@@ -35,7 +36,7 @@ public class QuadraticEquation {
             int i2 = (int) Math.round(x2);
             x1 = (double) i / 1000;
             x2 = (double) i2 / 1000;
-            System.out.println("Дискримінат =" + dis);
+            System.out.println("Дискримінат = " + dis);
             System.out.println("Корені рівняння    " + x1 + "   " + x2);
         } else if (dis < 0) {
             System.out.println("Рівняння коренів не має");
